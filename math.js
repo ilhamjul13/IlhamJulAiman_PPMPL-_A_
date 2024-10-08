@@ -1,10 +1,16 @@
-// math.js
-
 function tambah(a, b) {
+    // Pastikan kedua input adalah angka
+    if (typeof a !== 'number' || typeof b !== 'number') {
+        return NaN;
+    }
     return a + b;
 }
 
 function kali(a, b) {
+    // Pastikan kedua input adalah angka
+    if (typeof a !== 'number' || typeof b !== 'number') {
+        return NaN;
+    }
     return a * b;
 }
 
@@ -14,7 +20,7 @@ function kurang(a, b) {
 
 function bagi(a, b) {
     if (b === 0) {
-        throw new Error("Tidak bisa membagi dengan nol");
+        throw new Error('Tidak bisa membagi dengan nol');
     }
     return a / b;
 }
